@@ -1,0 +1,45 @@
+.testimonials{
+	background: $portfolio;
+	padding-top: 70px;
+	padding-bottom: 95px;
+}
+.slider{
+	padding: 50px 70px;
+	background: #fff;
+}
+
+.man{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__text{
+		padding-left: 40px;
+		
+	}
+	&__desc{
+		font-family: $desc;
+		font-size: 0.875rem;
+		color: $desc-color;
+		line-height: 1.7rem;
+	}
+
+	&__name{
+		font-family: $desc;
+		font-weight: 700;
+		font-size: 1rem;
+		text-transform: uppercase;
+		color:$green;
+	}
+
+	&__position{
+		font-family: $title;
+		color: $font-black;
+		text-transform: uppercase;
+		font-size: 0.875rem;
+		line-height: 1.7rem;}
+	&__img{
+		border-radius: 50%;
+		width:130px;
+		height: 130px;
+	}
+}

@@ -1,0 +1,90 @@
+.header{
+	background:linear-gradient(to top, rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../images/header-bg.jpg') no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	min-width: 100vw;
+	min-height: 100vh;
+	font-family: $title;
+	color: #fff;
+	padding-top: 30px;
+	padding-bottom: 9%;
+	display: flex;
+	&__text{
+		margin-bottom: 30%;
+	}
+
+	&__title{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.18rem;
+		text-transform:uppercase;
+		letter-spacing: 0.5rem;
+		line-height: 4.375rem;
+
+	}
+
+	&__description{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font: 1rem/1.75rem $desc;
+	}
+}
+.icon-logo{
+	width: 121px;
+	height: 20px;
+	fill:#fff;
+}
+
+/* .logo{
+	font-family: $logo;
+	font-size: 1.56rem;
+	color:#fff;
+	text-decoration: none;
+} */
+
+.navigation{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25%;
+
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	justify-content: flex-end;
+	&__item{
+		padding: 8px 22px;
+
+		border: 1px solid transparent;
+		border-radius: 16px;
+		
+		&:hover{
+			border: 1px solid #fff;
+
+
+		}
+	}
+	&__link{
+		text-decoration: none;
+		font-weight: 300;
+		font-size: 1rem;
+		color: #fff;
+		transition: all .3s;
+				
+	}
+}
+
+.arrow{
+	display: flex;
+	justify-content: center;
+	&__icon{
+		color:$green;
+	font-size: 2.5rem;
+	}
+	
+}

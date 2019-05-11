@@ -1,0 +1,62 @@
+.portfolio{
+	background: $portfolio;
+	padding-top: 85px;
+	padding-bottom: 7%;
+	color:$font-black;
+	&__menu{
+		
+		display: flex;
+		justify-content: center;
+
+		font-family: $desc;
+		margin-bottom: 50px;
+
+	}
+}
+
+.blocks{
+	
+}
+
+.sizer {
+	width: 22.5%;
+	
+}
+
+.blocks {
+	&__img {
+		width: calc(26% - 20px);
+		margin-bottom: 7px;
+		
+	}
+
+}
+
+.filters{
+	display: flex;
+	&__item{
+		margin-left: 30px;
+		display: inline-block;
+		position: relative;
+		&::before{
+			content: "";
+	        width: 0;
+	        height: 2px;
+	        position: absolute;
+	        bottom: -15px;
+	        left: 50%;
+	        transition: all 0.3s;	
+		}
+
+		&--is-active,
+		&:hover{
+			&:before {
+            width: 100%;
+            left: 0;
+            background: $green;
+            
+        	}
+		}
+	}
+
+}
